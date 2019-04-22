@@ -1,21 +1,16 @@
-var email = ["mario.rossi@gmail.com","giacomo.verdi@gmail.com","fabio.neri@gmail.com"];
+var email = ["mail-1@gmail.com","mail-2@gmail.com","mail-3@gmail.com","mail-4@gmail.com","mail-5@gmail.com"];
 var email_utente = prompt("Inserisci la tua email")
-console.log(email_utente);
+
 for (var i = 0; i < email.length; i++)
 {
-  if (email != email_utente) {
-    var bool = 0;
-  }
-  else {
+  if (email[i] == email_utente) {
     var bool = 1;
   }
-  console.log(email[i]);
-  console.log(bool);
 }
 
 if (bool == 1) {
-  alert("accesso ok")
+  alert("Accesso autorizzato")
 
 } else {
-  alert("non puoi accedere")
+  alert("La tua e-mail non è nella lista")
 }
